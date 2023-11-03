@@ -6,8 +6,53 @@
     margin: 0;
 }
 
-/* HEADER */
-
 /* MAIN */
 
+main {
+    width: 100%;
+    background-color: black;
+}
+
+main section:first-child {
+    width: 100%;
+    height: 20px;
+    background-color: aqua;
+}
+
+main section:nth-of-type(2) {
+    width: 80%;
+    height: calc(100vh - 120px);
+    background-color: beige;
+    margin: auto;
+    overflow: auto;
+}
+
+/* dimensioni foto */
+
+.container-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.container-photos .photo {
+    width: 250px;
+    margin: 5px 0;
+}
+
+.container-photos .photo>img {
+    width: 100%;
+    display: block;
+}
+
 /* FOOTER */
+
+footer>section {
+    height: 100px;
+    background-color: orange;
+
+    /* debug */
+    background-color: lightcoral;
+}
