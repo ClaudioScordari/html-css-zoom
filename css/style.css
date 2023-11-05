@@ -16,8 +16,6 @@ main {
 main section:first-child {
     width: 100%;
     text-align: right;
-    position: fixed;
-    z-index: 1;
 }
 
 main section:first-child>button {
@@ -57,10 +55,53 @@ main section:nth-of-type(2) {
 
 /* FOOTER */
 
+footer {
+    background-color: #222222;
+}
+
 footer>section {
     height: 100px;
-    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    /* debug */
-    background-color: lightcoral;
+footer>section div {
+    color: white;
+}
+
+footer>section>div>div>* {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+footer>section>div>* {
+    display: inline-block;
+}
+
+footer .size-icon-up {
+    font-size: 30px;
+}
+
+footer .vertical-align {
+    vertical-align: middle;
+    text-align: center;
+}
+
+br+span {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.green-special {
+    color: green;
+}
+
+footer>section>div:last-child {
+    color: red;
+    height: 100%;
+    background-color: #4A4A4A;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
